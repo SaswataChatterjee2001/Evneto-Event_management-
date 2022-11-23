@@ -1,0 +1,36 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("photo/pic 48.jpg");
+    background-size: cover;
+    background-position: right;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+h1{
+    padding-top: 10%;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    border-radius: 2rem;
+    color: #000;
+}

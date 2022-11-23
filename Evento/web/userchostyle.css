@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #F5395B;
+    height: 14vh;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 34px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.log{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(photo/pic\ 5.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.contact-form H2{
+    margin: 0;
+    padding: 0 0 40px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact-form P{
+    margin: 0;
+    padding: 2%;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.contact-form{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 300px;
+    padding: 60px 50px;
+    background: rgba(0,0,0,0.6);  
+}
+
+.contact-form INPUT[TYPE = SUBMIT]{
+    height: 30px;
+    width: 200%;
+    color: white;
+    font-size: 15px;
+    background: #F5395B;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;   
+    margin-left: 40%;
+}
+.contact-form INPUT[TYPE = RESET]{
+    height: 30px;
+    width: 200%;
+    color: white;
+    font-size: 15px;
+    background: #F5395B;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
+    margin-left: 40%;  
+}

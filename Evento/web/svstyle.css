@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-color: #F5395B;
+    height: 14vh;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 34px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+center{
+    padding-top: 2%;
+}
+.service{
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-bottom: 8%;
+    padding-right: 8%;
+}
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap:1.5rem;
+}
+.service .box-container .box{
+    border-radius: .5rem;
+    background:rgb(95, 95, 95);
+    text-align: center;
+    padding:2.5rem;
+}
+.service .box-container .box i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    border-radius: 80%;
+    font-size: 2.5rem;
+    background-color: rgb(104, 191, 218);
+    color:#fff;
+}
+.service .box-container .box h3{
+    font-size: 1.8rem;
+    color:#fff;
+    padding:1rem 0;
+}
+.service .box-container .box p{
+    font-size: 1.2rem;
+    color:#eee;
+    line-height: 1.8;
+}

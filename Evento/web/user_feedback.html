@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Evneto Feedback Form</title>
+<link rel="stylesheet" href="fdstyle.css"></link>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="photo/logo2.png"></img>
+            </div>
+        </div>
+        <div class="main">
+            <ul>
+                <li><a href="user_home.html">Home</a></li>
+                <li><a href="events.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="user_home.html#about">About US</a></li>
+                <li><a href="user_home.html#contact">Contact US</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="heading"><h1>Your Valuable Feedback</h1></section>
+<div id="stylized" class="myform">
+<form id="form1" id="form1" action="user_feedback" method="POST">
+    <label>Name
+        <span class="small">Add your name</span>
+    </label>
+<input type="text" name="name" placeholder="Your Name" required>
+    <label>Email
+        <span class="small">Enter a Valid Email</span>
+    </label>
+<input type="email" name="email" placeholder="xyz@example.com" required>
+    <label>Phone
+        <span class="small">Add a valid Phone No.</span>
+    </label>
+<input type="number" name="phone" placeholder="12345678910" required>
+<br />
+<br />
+<label>Behaviour
+    <span class="small">Manager/Service Providers</span>
+</label>
+<select name="behaviour" id="1" required>
+    <option value="0">Select</option>
+    <option value="Very Bad">Very Bad</option>
+    <option value="Angry">Angry</option>
+    <option value="Average">Average</option>
+    <option value="Good">Good</option>
+    <option value="Very Polite">Very Polite</option>
+    </select>
+    <label>Rating *  
+        <span class="small">Rate this Website  </span>
+    </label>
+<select name="Rating" id="1" required>
+<option value="0">Select</option>
+<option value="*">*</option>
+<option value="**">**</option>
+<option value="***">***</option>
+<option value="****">****</option>
+<option value="*****">*****</option>
+</select>
+<br />
+<br />
+<br />
+    <label>Message
+        <span class="small">Your Feedback</span>
+    </label>
+<textarea name="message" rows="6" cols="25" placeholder="Type Your Message" required></textarea><br />
+    <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
+<div class="spacer"></div>
+</form>
+</div> <!-- end of form class -->
+<footer></footer>
+</body>
+</html>

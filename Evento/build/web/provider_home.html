@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Organise Gallery</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="pstyle.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            function fun(){
+                swal({
+                    title: "Are you sure?",
+                    text: "You want to Log Out",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("You are Successfully Log Out", {
+                        icon: "success",
+                        closeOnClickOutside: false,
+                        confirmButtonText: "OK",
+                        onabort:"index.html",
+                    })
+                    .then(function() {
+                        window.location = "logout";
+                    });
+                    } else {
+                        swal("Logging Out Failed","You are Still Log In !");
+                    }
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="photo/logo2.png">
+                </div>
+            </div>
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="provider_home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Provider_home.html#about">About US</a></li>
+                    <li><a href="Provider_home.html#contact">Contact US</a></li>
+                    <li onclick="fun()"><a>Log Out</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="userlogin" id="userlogin">
+            <center>
+            <div class="username">
+                <h1>Welcome !!</h1>
+            </div>
+            <div class="details">
+                <h2>Your Pending Requests </h2>
+                <div class="butt">
+                    <ul>
+                        <li class="bttn"><a href="provider_details">Pending Requests</a></li>
+                    </ul>
+                </div>
+                <h2>Your work status</h2>
+                <div class="butt">
+                    <ul>
+                        <li class="bttn"><a href="details">Completed</a></li>
+                    </ul>
+                </div>
+                <h2>Work Page</h2>
+                <div class="butt">
+                    <ul>
+                        <li class="bttn"><a href="worklist">See Your Worklist</a></li>
+                    </ul>
+                </div>
+                <h2>Payment Status</h2>
+                <div class="butt">
+                    <ul>
+                        <li class="bttn"><a href="provider_status">See Your Payment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </center>
+        </section>
+        <section class="about" id="about">
+            <center>
+                <h1><span>About</span> US </h1>
+            
+            <div class="row">
+                <div class="image">
+                    <img src="photo/pic 2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>We will give a very special celebration for you</h3>
+                    <p>We founded <b>EVNETO</b> with one goal in mind: to design and produce creative and unforgettable events for every occasion. From small intimate affairs to large-scale parties, we strive to execute events that not only aim to impress,
+                         but also to create unique experiences for our clients and their guests that last long after the fun is over.</p>
+                    <a href="#contact" class="btn"><b>Contact US</b></a>
+                </div>
+            </div>
+        </center>
+        </section>
+        <section class="contact" id="contact">
+            <center>
+            <h1> <span>Contact</span> Us </h1>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name" required>
+                    <input type="email" placeholder="email" required>
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Phn No." required>
+                    <input type="text" placeholder="subject" required>
+                </div>
+                <textarea name="message" placeholder="your message" cols="10" rows="5" required></textarea>
+                <div class="but">
+                    <input type="Submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </center>
+        </section>
+    </body>
+</html>

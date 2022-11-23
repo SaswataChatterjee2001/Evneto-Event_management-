@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-color: #F5395B;
+    height: 14vh;
+}
+header .main ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 34px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+header .main ul li a:hover{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.userlogin{
+    padding-top: 6%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("photo/pic 45.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 7%;
+}
+.userlogin .username{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+.userlogin .details{
+    font-size: 1.3rem;
+    color: #fff;
+    text-align:left;
+    padding-bottom: 2.5rem;
+    padding-left: 25%;
+}
+.userlogin .details h2{
+    margin-top: 2%;
+    padding-bottom: 1rem;
+}
+.userlogin .details .but{
+    margin-top: -4.5%;
+    padding-left: 50%;
+}
+.userlogin .details .btn{
+    list-style-type: none;
+    position:relative;
+    border: 4px #333;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.userlogin .details .but ul li a{
+    background-color: #f890a3;
+    border-radius: 2rem;
+    color: #000;
+}
+.userlogin .details .but ul li a:hover{
+    background-color: #F5395B;
+    color: #fff;
+}

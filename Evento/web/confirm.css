@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+body:before{
+    content: '';
+    position: fixed;
+    width: 150vw;
+    height: 150vh;
+    background-image: url(photo/birthday.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px); 
+}
+.contact-form P{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20;
+    color: #fff;
+    
+}
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 300px;
+    padding: 80px 40px;
+    background: rgba(0,0,0,0.6);  
+}
+.contact-form INPUT[TYPE = SUBMIT]{
+    height: 30px;
+    width: 50%;
+    color: white;
+    font-size: 15px;
+    background: #F5395B;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;   
+}

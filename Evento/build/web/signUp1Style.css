@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-color: #F5395B;
+    height: 14vh;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 34px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.signup{
+    padding-top: 5%;
+    padding-bottom: 30%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("photo/pic 14.jpg");
+    background-position:unset;
+    background-size: cover;
+}
+.signup .heading h1{
+    color: #fff;
+    font-size: 60px
+}
+.signup .heading h2{
+    color: #fff;
+    padding-top: 1%;
+    font-size: 38px;
+}
+.signup .mbody h2{
+    color: #fff;
+    font-size: 35px;
+    padding-top: 3%;
+}
+.button{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    font-size: 1.5rem;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    border-radius: 2rem;
+    color: #000;
+}

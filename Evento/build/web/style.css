@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("photo/pic 8.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #000;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    transform: translate(-30%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.title h2{
+    color: #fff;
+    font-size: 46px;
+}
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    border-radius: 2rem;
+    color: #000;
+}
+span{
+    color: blue;
+}
+.about{
+    background-image: url("photo/pic 40.jpg");
+    padding-top: 2%;
+}
+.about h1{
+    font-size: 3.5rem;
+}
+.about .row{
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex:1 5 25rem;
+}
+.about .row .image img{ 
+    width:19rem;
+    height:26rem;
+    border-radius: 1rem;
+}
+.about .row .content{
+    flex:12 13 21rem;
+}
+.about .row .content h3{
+    font-size: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    color:rgb(219, 52, 135);
+}
+.about .row .content p{
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    color:rgb(223, 86, 100);
+    line-height: 2;
+}
+.about .btn{
+    color:#000;
+    border-color: black;
+}
+.about .btn:hover{
+    color: #fff;
+    background-color: rgb(176, 98, 210);
+}
+.contact{
+    background-image: url("photo/pic 42.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.contact h1{
+    font-size: 3.2rem;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.contact form{
+    max-width: 70rem;
+    margin:1rem auto;
+    text-align: center;
+    padding-bottom: 8%;
+}
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contact form .inputBox input,
+.contact form textarea{
+    width: 50%;
+    background:rgb(243, 203, 203);
+    margin:.7rem 0;
+    padding: .8rem;
+    font-size: 1rem;
+    color:#fff;
+    text-transform: none;
+    border-color: rgb(202, 163, 163);
+    border-radius: 1rem;
+    border: 0%;
+}
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+    color: #000;
+    border-color: #fff;
+    text-transform: capitalize;
+}
+.contact form .inputBox input:focus,
+.contact form textarea:focus{
+    border: 0%;
+    border-color: #fff;
+    background:rgb(247, 181, 181);
+}
+.contact form .inputBox input{
+    width: 35%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .but{
+    padding-right: 12%;
+}
+.contact form .btn{
+    color: #000;
+    border-color: #333;
+    margin-top: 1.5%;
+    position: absolute;
+}
+.contact form .btn:hover{
+    color: #fff;
+    border-color: #fff;
+    border: 0%;
+    background-color: rgb(216, 99, 235);
+}
